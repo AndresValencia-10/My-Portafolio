@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Andres Valencia" />
+		<meta
+			name="description"
+			content="Portafolio de Andrés Valencia: desarrollador web y diseñador gráfico especializado en JavaScript, Photoshop y Blender."
+		/>
+		<meta name="keywords" content="photoshop, blender, desarrollo web" />
+		<meta name="theme-color" content="#09f" />
+		<!-- Iconos  -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Fuente -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Portafolio</title>
+		<link
+			rel="icon"
+			href="assets/img/logo-mio-ryder-personal-1.1.png"
+			type="image/png"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="module" src="assets/js/main.js"></script>
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: 'DJJ0SfztbIW5u4PP_',
+				});
+			})();
+		</script>
+	</head>
+
+	<body>
+		<!-- Loader -->
+		<div class="loader flex--container loader--hidden">
+			<img src="assets/img/logo.svg" alt="Loader Image" class="loader__logo" />
+		</div>
+		<header class="header">
+			<nav class="navbar grid--container flex--container">
+				<a class="navbar__logo flex--container" href="#"
+					><i class=""></i>Andres</a
+				>
+
+				<div id="nav" class="navbar__menu">
+					<a href="#close"
+						><i class="bx bx-x btn__close navbar__icon flex--container"></i
+					></a>
+
+					<ul class="navbar__list flex--container">
+						<li class="navbar__item">
+							<a class="navbar__link active" href="#home">Inicio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#about">Acerca de Mí</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#skills">Habilidades</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#projects">Portafolio</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__link" href="#contact">Contacto</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__toggles flex--container">
+					<div class="navbar__toggle--darkmode flex--container">
+						<input
+							type="checkbox"
+							name="color-scheme"
+							id="darkmode-toggle"
+							class="navbar__toggle--darkmode-input"
+						/>
+						<label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+							<i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+							<i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+						</label>
+					</div>
+					<div class="navbar__toggle--language flex--container">
+						<input
+							type="checkbox"
+							name="language-toggle"
+							id="language-toggle"
+							class="navbar__toggle--language-input"
+						/>
+						<label
+							for="language-toggle"
+							class="navbar__toggle--language-label"
+						></label>
+					</div>
+				</div>
+				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="home">
+				<i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+				<i
+					class="bx bxl-javascript home__layer home__layer--2"
+					data-speed="5"
+				></i>
+				<i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+				<i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+				<i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+				<i
+					class="bx bxl-tailwind-css home__layer home__layer--6"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+				<i
+					class="bx bxl-typescript home__layer home__layer--8"
+					data-speed="-2"
+				></i>
+				<i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+				<i
+					class="bx bxl-graphql home__layer home__layer--10"
+					data-speed="-7"
+				></i>
+				<i
+					class="bx bx-code-alt home__layer home__layer--11"
+					data-speed="-5"
+				></i>
+				<div class="home__container grid--container">
+					<div class="home__image">
+						<img
+							src="assets/img/logo-mio-ryder-personal-1.1.png"
+							alt="profile photo"
+							title="Andres"
+						/>
+					</div>
+
+					<ul class="home__social flex--container">
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-linkedin"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-whatsapp"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bxl-github"></i
+							></a>
+						</li>
+						<li class="home__social-item">
+							<a class="home__social-link" href="#" target="_blank"
+								><i class="bx bx-envelope"></i
+							></a>
+						</li>
+					</ul>
+
+					<div class="home__info">
+						<h1 class="home__title">Hola, soy Andres</h1>
+
+						<p class="home__description">
+							Soy desarrollador web, apasionada por la tecnología, la
+							programación, y el diseño grafico.
+						</p>
+					</div>
+
+					<div class="home__buttons">
+						<a
+							class="btn"
+							href="#"
+							title="Descargar mi CV"
+							download="my_cv"
+							rel="noreferrer nofollow"
+						>
+							Descargar CV
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="about section">
+				<h2 class="section__title">Acerca de Mí</h2>
+
+				<div class="about__container grid--container">
+					<p class="about__description">
+						Soy programador y diseñador con pasión por crear soluciones
+						funcionales y visualmente atractivas. Me especializo en combinar
+						lógica y creatividad para desarrollar interfaces intuitivas y
+						experiencias digitales eficientes. Siempre busco aprender nuevas
+						tecnologías y mejorar cada proyecto en el que trabajo.
+					</p>
+
+					<div class="about__cards flex--container">
+						<!--Card 1 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/IMG_4155.jpg"
+								alt="Laborando como ingeniero"
+								title="Laborando como ingeniero"
+							/>
+						</div>
+						<!--Card 2 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/IMG_4156.jpg"
+								alt="Laborando como diseñador"
+								title="Laborando como diseñador"
+							/>
+						</div>
+						<!--Card 3 -->
+						<div class="about__card">
+							<img
+								class="about__card--img"
+								src="assets/img/IMG_4159.jpg"
+								alt="Trabajando en equipo"
+								title="rabajando en equipo"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills" class="skills section">
+				<h2 class="section__title">💻Habilidades</h2>
+
+				<div class="skills__container grid--container">
+					<p class="skills__description flex--container">
+						Lenguajes de programación: JavaScript, Python, HTML, CSS. Frameworks
+						y bibliotecas: React, Node.js. Diseño: Photoshop. Control de
+						versiones: Git, GitHub. Otros: Blender, C4D.
+					</p>
+
+					<div class="skills__wrapper flex--container">
+						<div class="skills__cards flex--container">
+							<!--Card 1 -->
+							<details class="skills__cards-container" name="moreInfo" open>
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-html5 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">HTML</h3>
+
+									<p class="skills__card-description">
+										Como principiante en HTML, tengo conocimientos básicos para
+										estructurar páginas web utilizando etiquetas esenciales.
+										Puedo crear contenido simple, como textos, enlaces, listas e
+										imágenes, y entiendo la importancia de una correcta
+										semántica para la organización del contenido.
+									</p>
+								</div>
+							</details>
+							<!--Card 2 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-css3 flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">CSS3</h3>
+
+									<p class="skills__card-description">
+										Como principiante en CSS, manejo las propiedades básicas
+										para darle estilo a páginas web, como colores, fuentes,
+										márgenes y alineación. Estoy aprendiendo a mejorar la
+										apariencia visual y la presentación de los elementos HTML
+										para hacer interfaces más atractivas y ordenadas.
+									</p>
+								</div>
+							</details>
+							<!--Card 3 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-javascript flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Javascript</h3>
+
+									<p class="skills__card-description">
+										Como principiante en JavaScript, tengo conocimientos básicos
+										para agregar interactividad a páginas web. Puedo trabajar
+										con variables, funciones y eventos simples, y estoy en
+										proceso de comprender cómo manipular el DOM y responder a
+										acciones del usuario.
+									</p>
+								</div>
+							</details>
+							<!--Card 4 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<i class="bx bxl-react flex--container"></i>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">React</h3>
+
+									<p class="skills__card-description">
+										Actualmente no he trabajado con React, pero estoy interesado
+										en aprender este framework ya que es una herramienta clave
+										para el desarrollo de interfaces modernas. Tengo la base
+										necesaria en JavaScript y HTML/CSS para comenzar a
+										comprender su estructura basada en componentes.
+									</p>
+								</div>
+							</details>
+							<!--Card 5 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<img
+										src="assets/img/photoshopimg.png"
+										alt="Logo de Photoshop"
+										class="skills__icon"
+									/>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Photoshop</h3>
+
+									<p class="skills__card-description">
+										Amplio dominio de Adobe Photoshop, con experiencia en
+										retoque fotográfico, manipulación de imágenes, composición
+										digital y diseño visual de alto impacto. Capaz de
+										transformar ideas en piezas gráficas pulidas y
+										profesionales.
+									</p>
+								</div>
+							</details>
+							<!--Card 6 -->
+							<details class="skills__cards-container" name="moreInfo">
+								<summary class="skills__cards-title flex--container">
+									<img
+										src="assets/img/img.icons8.png"
+										alt="Logo de Photoshop"
+										class="skills__icon"
+									/>
+								</summary>
+								<div class="skills__card-container">
+									<h3 class="skills__card-title">Blender</h3>
+
+									<p class="skills__card-description">
+										Conocimiento intermedio en Blender, con experiencia en
+										modelado 3D, texturizado básico y creación de escenas
+										simples. Capaz de desarrollar proyectos 3D funcionales y
+										visualmente atractivos.
+									</p>
+								</div>
+							</details>
+						</div>
+					</div>
+					<div class="skills__tags flex--container">
+						<h3 class="skills__tags-title">Habilidades Blandas</h3>
+						<div class="skills__tags-container flex--container">
+							<span class="skills__tag">Comunicación efectiva</span>
+							<span class="skills__tag">Trabajo en equipo</span>
+							<span class="skills__tag">Creativo</span>
+							<span class="skills__tag">Gestión del tiempo</span>
+							<span class="skills__tag">Adaptabilidad</span>
+							<span class="skills__tag">Autodidacta</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects section">
+				<h2 class="section__title">Proyectos</h2>
+
+				<div class="projects__container grid--container">
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/img7.png"
+									alt="project 1"
+									title="Foto Manipulacon"
+									id="myImage"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Proyecto 1</h3>
+								<p class="projects__description">
+									En este primer proyecto, fue la creacion de difrentes imagenes
+									hasta llegar a lo mas resliata posible, ya que el fondo, el
+									peluche y la persona fueron elementos por separados.
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										VER DEMO
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/thumb-gta-sa-1.2.png"
+									alt="project 1"
+									title="GTA San Andreas"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Proyecto 2</h3>
+								<p class="projects__description">
+									En este segundo proyecto, podemos ver el videojuego de gta san
+									andreas, un juego con bastantes años e historia, esta imagen
+									fue hecha para un video, donde se modelo en 3D los personajes,
+									una captura del juego y un ambiente totalmente creado por mi.
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										VER DEMO
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/thumbnail-trygard-hp-1.2.png"
+									alt="project 1"
+									title="Fortnite"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Proyecto 3</h3>
+								<p class="projects__description">
+									En este otro proyecto vemos el videojuego de fortnite, cada
+									uno de los personajes fueron modelados en 3D.
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										VER DEMO
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="projects__project">
+						<div class="projects__inner grid--container">
+							<div class="projects__image">
+								<img
+									src="assets/img/thumbnail-repo-stancher-1.2.png"
+									alt="project 1"
+									title="REPO"
+								/>
+							</div>
+
+							<div class="projects__info">
+								<h3 class="projects__name">Proyecto 4</h3>
+								<p class="projects__description">
+									En este ultimo proyecto, vemos una combinacion entre un
+									videojuego y la foto de una persona, para ambientar la imagen
+									con su expresion, de suspenso, terror y miedo, esto nos da mas
+									dinamismo a la hora de ver la imagen.
+								</p>
+
+								<div class="projects__buttons">
+									<button class="btn projects__button" type="button">
+										VER DEMO
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact section">
+				<h2 class="section__title">Contacto</h2>
+
+				<div class="contact__container grid--container">
+					<div class="contact__info">
+						<h3 class="contact__info-title">Información de contacto</h3>
+						<p class="contact__info-description">Andres Valencia</p>
+
+						<address class="contact__info-data">
+							<div class="contact__info-item">
+								<i class="bx bxl-whatsapp"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto"
+										target="_blank"
+										rel="noreferrer nofollow"
+										>Enviar mensaje a WhatsApp</a
+									>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-phone"></i>
+
+								<span class="contact__info-number">
+									<a
+										href="tel:1-234-567-8910"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										+57 315 467 0703
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bxs-envelope"></i>
+
+								<span class="contact__info-mail">
+									<a
+										id="mail"
+										href="mailto:test@correo.com"
+										target="_blank"
+										rel="noreferrer nofollow"
+									>
+										andresvm2410@gmail.com
+									</a>
+								</span>
+							</div>
+
+							<div class="contact__info-item">
+								<i class="bx bx-map"></i>
+
+								<span class="contact__info-map">
+									Calarcá, Quindio, Colombia.
+								</span>
+							</div>
+						</address>
+					</div>
+					<div class="contact__form">
+						<h3 class="contact__form-title">Enviar mensaje</h3>
+						<form id="form" class="contact__form-container">
+							<div class="contact__form-group">
+								<label for="name" class="contact__form-label">Nombre</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="email" class="contact__form-label">Correo</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="subject" class="contact__form-label">Asunto</label>
+								<input
+									type="text"
+									id="subject"
+									name="subject"
+									class="contact__form-input"
+								/>
+							</div>
+
+							<div class="contact__form-group">
+								<label for="message" class="contact__form-label">Mensaje</label>
+								<textarea
+									id="message"
+									name="message"
+									cols="30"
+									rows="10"
+									class="contact__form-input"
+								></textarea>
+							</div>
+							<dialog class="contact__form-modal" id="modal">
+								Formulario enviado con éxito!
+								<button type="reset" id="btn_close-modal">Cerrar</button>
+							</dialog>
+
+							<button type="submit" class="btn contact__form-button">
+								Enviar
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer section">
+			<div class="footer__container grid--container">
+				<div class="footer__info">
+					<h3 class="footer__title">Andres Valencia</h3>
+					<p class="footer__description">
+						Soy desarrollador web, apasionada por la tecnología, la
+						programación, y el diseño grafico.
+					</p>
+				</div>
+
+				<div class="footer__social">
+					<h3 class="footer__title">Redes Sociales</h3>
+
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://www.instagram.com/andresvm__10?igsh=MTJ1NWNwdjFqaTh3Mg%3D%3D&utm_source=qr"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-instagram"></i
+							></a>
+						</li>
+
+						<li class="footer__social-item">
+							<a
+								class="footer__social-link"
+								href="https://x.com/AndresVM__10"
+								target="_blank"
+								rel="noreferrer nofollow"
+								><i class="bx bxl-twitter"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="footer__copy"><span></span> Todos los derechos reservados</p>
+		</footer>
+	</body>
+</html>
